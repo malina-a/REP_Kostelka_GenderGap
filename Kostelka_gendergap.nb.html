@@ -1754,46 +1754,83 @@ display: none;
 <!-- rnb-text-begin -->
 <div id="libraries" class="section level2">
 <h2>Libraries</h2>
+<p>Loading all the necessary libraries!</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5pbnN0YWxsLnBhY2thZ2VzKFwidXNldGhpc1wiKVxuXG5gYGAifQ== -->
-<pre class="r"><code>
-install.packages(&quot;usethis&quot;)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g4oCYQzovVXNlcnMvbWFsaW4vQXBwRGF0YS9Mb2NhbC9SL3dpbi1saWJyYXJ5LzQuM+KAmVxuKGFzIOKAmGxpYuKAmSBpcyB1bnNwZWNpZmllZClcbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vd2luZG93cy9jb250cmliLzQuMy91c2V0aGlzXzMuMC4wLnppcCdcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24vemlwJyBsZW5ndGggOTE4Nzc3IGJ5dGVzICg4OTcgS0IpXG5kb3dubG9hZGVkIDg5NyBLQlxuIn0= -->
-<pre><code>Installing package into ‘C:/Users/malin/AppData/Local/R/win-library/4.3’
-(as ‘lib’ is unspecified)
-trying URL &#39;https://cran.rstudio.com/bin/windows/contrib/4.3/usethis_3.0.0.zip&#39;
-Content type &#39;application/zip&#39; length 918777 bytes (897 KB)
-downloaded 897 KB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJh1c2V0aGlz4oCZIHN1Y2Nlc3NmdWxseSB1bnBhY2tlZCBhbmQgTUQ1IHN1bXMgY2hlY2tlZFxuXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdEM6XFxVc2Vyc1xcbWFsaW5cXEFwcERhdGFcXExvY2FsXFxUZW1wXFxSdG1wQVp2emtvXFxkb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
-<pre><code>package ‘usethis’ successfully unpacked and MD5 sums checked
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5pbnN0YWxsLnBhY2thZ2VzKFxcdXNldGhpc1xcKVxuXG5gYGBcbmBgYCJ9 -->
+<pre class="r"><code>```r
 
-The downloaded binary packages are in
-    C:\Users\malin\AppData\Local\Temp\RtmpAZvzko\downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh1c2V0aGlzKVxuXG5gYGAifQ== -->
-<pre class="r"><code>library(usethis)
+install.packages(\usethis\)
 </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>use “data/EES_aggregated_macrovariables.dta”, clear</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9hZChcIkM6L1VzZXJzL21hbGluL0Rvd25sb2Fkcy9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5SRGF0YVwiKVxuYSA8LSB0YWJsZVxuYGBgIn0= -->
-<pre class="r"><code>load(&quot;C:/Users/malin/Downloads/EES_aggregated_macrovariables.RData&quot;)
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g4oCYQzovVXNlcnMvbWFsaW4vQXBwRGF0YS9Mb2NhbC9SL3dpbi1saWJyYXJ5LzQuM+KAmVxuKGFzIOKAmGxpYuKAmSBpcyB1bnNwZWNpZmllZClcbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vd2luZG93cy9jb250cmliLzQuMy91c2V0aGlzXzMuMC4wLnppcCdcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24vemlwJyBsZW5ndGggOTE4Nzc3IGJ5dGVzICg4OTcgS0IpXG5kb3dubG9hZGVkIDg5NyBLQlxucGFja2FnZSDigJh1c2V0aGlz4oCZIHN1Y2Nlc3NmdWxseSB1bnBhY2tlZCBhbmQgTUQ1IHN1bXMgY2hlY2tlZFxuXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdEM6XFxVc2Vyc1xcbWFsaW5cXEFwcERhdGFcXExvY2FsXFxUZW1wXFxSdG1wQVp2emtvXFxkb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== --&gt;
+</code></pre>
+<p>Installing package into
+‘C:/Users/malin/AppData/Local/R/win-library/4.3’ (as ‘lib’ is
+unspecified) trying URL ‘<a href="https://cran.rstudio.com/bin/windows/contrib/4.3/usethis_3.0.0.zip" class="uri">https://cran.rstudio.com/bin/windows/contrib/4.3/usethis_3.0.0.zip</a>’
+Content type ‘application/zip’ length 918777 bytes (897 KB) downloaded
+897 KB package ‘usethis’ successfully unpacked and MD5 sums checked</p>
+<p>The downloaded binary packages are in C:_packages</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubGlicmFyeSh1c2V0aGlzKVxuXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+library(usethis)
+</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+use &quot;data/EES_aggregated_macrovariables.dta&quot;, clear
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubG9hZChcXEM6L1VzZXJzL21hbGluL0Rvd25sb2Fkcy9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5SRGF0YVxcKVxuYSA8LSB0YWJsZVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+load(\C:/Users/malin/Downloads/EES_aggregated_macrovariables.RData\)
 a &lt;- table</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>add macro-level variables</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5hJHByZXNpZGVudGlhbCA8LSAwXG5cbmEkcHJlc2lkZW50aWFsW2EkY291bnRyeSA9PSAxIHxhJGNvdW50cnkgPT0gMyB8YSRjb3VudHJ5ID09IDR8YSRjb3VudHJ5ID09IDEwfGEkY291bnRyeSA9PSAxNHxhJGNvdW50cnkgPT0gMTd8YSRjb3VudHJ5ID09IDIxfGEkY291bnRyeSA9PSAyMnxhJGNvdW50cnkgPT0gMjNdIDwtIDFcblxuYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT02ICYgYSR5ZWFyPj0yMDEzXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI0ICYgYSR5ZWFyPj0xOTk5XSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPD0yMDAyXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPj0yMDEyXSA8LSAxXG5cbiMgYWx0ZXJuYXRpdmUgZHBseXIgdmVyc2lvblxuXG4jIHRhYmxlIDwtIHRhYmxlICU+JVxuIyAgIG11dGF0ZShwcmVzaWRlbnRpYWwgPSBjYXNlX3doZW4oXG4jICAgICBjb3VudHJ5ICVpbiUgYygxLCAzLCA0LCAxMCwgMTQsIDE3LCAyMSwgMjIsIDIzKSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDYgJiB5ZWFyID49IDIwMTMgfiAxLFxuIyAgICAgY291bnRyeSA9PSAyNCAmIHllYXIgPj0gMTk5OSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDI1ICYgeWVhciA8PSAyMDAyIH4gMSxcbiMgICAgIGNvdW50cnkgPT0gMjUgJiB5ZWFyID49IDIwMTIgfiAxLFxuIyAgICAgVFJVRSB+IDAgICMgZGVmYXVsdCB2YWx1ZVxuIyAgICkpXG5cblxuYSA8LSBhIHw+XG4gIG11dGF0ZShsZWdpc2xhdGl2ZV90eXBlID0gY2FzZV93aGVuKFxuICAgIGNvdW50cnkgJWluJSBjKDMsNCwxMSwxOSwxMiwxMywxNSwxNywyMykgfiAxLFxuICAgIGNvdW50cnkgPT0gMTAgfiAyLFxuICAgIGNvdW50cnkgPT0gMjggfjIsXG4gICAgY291bnRyeT09MyAmIHllYXI9PTIwMDkgfiAyLFxuICAgIGNvdW50cnk9PTQgJiB5ZWFyPD0xOTk1IH4gMixcbiAgICBjb3VudHJ5PT0xNSAmIHllYXI+PTE5OTQgJiB5ZWFyIDw9MjAwMSB+IDIsXG4gICAgY291bnRyeT09MjMgJiB5ZWFyPj0yMDA4ICYgeWVhcjw9MjAxMiB+IDIsXG4gICAgVFJVRSB+IDBcbiAgKSlcblxuYSA8LSBhIHw+XG4gIG11dGF0ZShtYWpvcml0YXJpYW4gPSBjYXNlX3doZW4oXG4gICAgbGVnaXNsYXRpdmVfdHlwZSA9PTEgfiAwLFxuICAgIGxlZ2lzbGF0aXZlX3R5cGU9PTIgfiAxXG4gICkpXG4gIFxuXG5gYGAifQ== -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+add macro-level variables
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5hJHByZXNpZGVudGlhbCA8LSAwXG5cbmEkcHJlc2lkZW50aWFsW2EkY291bnRyeSA9PSAxIHxhJGNvdW50cnkgPT0gMyB8YSRjb3VudHJ5ID09IDR8YSRjb3VudHJ5ID09IDEwfGEkY291bnRyeSA9PSAxNHxhJGNvdW50cnkgPT0gMTd8YSRjb3VudHJ5ID09IDIxfGEkY291bnRyeSA9PSAyMnxhJGNvdW50cnkgPT0gMjNdIDwtIDFcblxuYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT02ICYgYSR5ZWFyPj0yMDEzXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI0ICYgYSR5ZWFyPj0xOTk5XSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPD0yMDAyXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPj0yMDEyXSA8LSAxXG5cbiMgYWx0ZXJuYXRpdmUgZHBseXIgdmVyc2lvblxuXG4jIHRhYmxlIDwtIHRhYmxlICU+JVxuIyAgIG11dGF0ZShwcmVzaWRlbnRpYWwgPSBjYXNlX3doZW4oXG4jICAgICBjb3VudHJ5ICVpbiUgYygxLCAzLCA0LCAxMCwgMTQsIDE3LCAyMSwgMjIsIDIzKSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDYgJiB5ZWFyID49IDIwMTMgfiAxLFxuIyAgICAgY291bnRyeSA9PSAyNCAmIHllYXIgPj0gMTk5OSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDI1ICYgeWVhciA8PSAyMDAyIH4gMSxcbiMgICAgIGNvdW50cnkgPT0gMjUgJiB5ZWFyID49IDIwMTIgfiAxLFxuIyAgICAgVFJVRSB+IDAgICMgZGVmYXVsdCB2YWx1ZVxuIyAgICkpXG5cblxuYSA8LSBhIHw+XG4gIG11dGF0ZShsZWdpc2xhdGl2ZV90eXBlID0gY2FzZV93aGVuKFxuICAgIGNvdW50cnkgJWluJSBjKDMsNCwxMSwxOSwxMiwxMywxNSwxNywyMykgfiAxLFxuICAgIGNvdW50cnkgPT0gMTAgfiAyLFxuICAgIGNvdW50cnkgPT0gMjggfjIsXG4gICAgY291bnRyeT09MyAmIHllYXI9PTIwMDkgfiAyLFxuICAgIGNvdW50cnk9PTQgJiB5ZWFyPD0xOTk1IH4gMixcbiAgICBjb3VudHJ5PT0xNSAmIHllYXI+PTE5OTQgJiB5ZWFyIDw9MjAwMSB+IDIsXG4gICAgY291bnRyeT09MjMgJiB5ZWFyPj0yMDA4ICYgeWVhcjw9MjAxMiB+IDIsXG4gICAgVFJVRSB+IDBcbiAgKSlcblxuYSA8LSBhIHw+XG4gIG11dGF0ZShtYWpvcml0YXJpYW4gPSBjYXNlX3doZW4oXG4gICAgbGVnaXNsYXRpdmVfdHlwZSA9PTEgfiAwLFxuICAgIGxlZ2lzbGF0aXZlX3R5cGU9PTIgfiAxXG4gICkpXG4gIFxuXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+
 a$presidential &lt;- 0
 
 a$presidential[a$country == 1 |a$country == 3 |a$country == 4|a$country == 10|a$country == 14|a$country == 17|a$country == 21|a$country == 22|a$country == 23] &lt;- 1
@@ -1835,25 +1872,43 @@ a &lt;- a |&gt;
   ))
   
 </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>** add math score data</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSRjb3VudHJ5eWVhciA8LSBwYXN0ZShjb3VudHJ5LHllYXIpXG5cbmBgYCJ9 -->
-<pre class="r"><code>a$countryyear &lt;- paste(country,year)
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+** add math score data
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuYSRjb3VudHJ5eWVhciA8LSBwYXN0ZShjb3VudHJ5LHllYXIpXG5cbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+a$countryyear &lt;- paste(country,year)
 </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IG9iamVjdCAnY291bnRyeScgbm90IGZvdW5kXG4ifQ== -->
-<pre><code>Error: object &#39;country&#39; not found</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IG9iamVjdCAnY291bnRyeScgbm90IGZvdW5kXG4ifQ== --&gt;
+</code></pre>
+<p>Error: object ‘country’ not found ```</p>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQojIyBMaWJyYXJpZXMNCg0KYGBge3J9DQpsaWJyYXJ5KGRwbHlyKQ0KbGlicmFyeSh0aWR5dmVyc2UpDQpsaWJyYXJ5KHN0cmluZ3IpDQoNCg0KbGlicmFyeSh1c2V0aGlzKQ0KdXNlX2dpdF9jb25maWcodXNlci5uYW1lID0gIm1hbGluYS1hIiwgdXNlci5lbWFpbCA9ICJtYWxpbmEuYW5pb2xAc2NpZW5jZXNwby5mciIpDQoNCmBgYA0KDQoNCnVzZSAiZGF0YS9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5kdGEiLCBjbGVhcg0KDQpgYGB7cn0NCmxvYWQoIkM6L1VzZXJzL21hbGluL0Rvd25sb2Fkcy9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5SRGF0YSIpDQphIDwtIHRhYmxlDQpgYGANCg0KYWRkIG1hY3JvLWxldmVsIHZhcmlhYmxlcw0KYGBge3J9DQoNCmEkcHJlc2lkZW50aWFsIDwtIDANCg0KYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5ID09IDEgfGEkY291bnRyeSA9PSAzIHxhJGNvdW50cnkgPT0gNHxhJGNvdW50cnkgPT0gMTB8YSRjb3VudHJ5ID09IDE0fGEkY291bnRyeSA9PSAxN3xhJGNvdW50cnkgPT0gMjF8YSRjb3VudHJ5ID09IDIyfGEkY291bnRyeSA9PSAyM10gPC0gMQ0KDQphJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTYgJiBhJHllYXI+PTIwMTNdIDwtIDENCmEkcHJlc2lkZW50aWFsW2EkY291bnRyeT09MjQgJiBhJHllYXI+PTE5OTldIDwtIDENCmEkcHJlc2lkZW50aWFsW2EkY291bnRyeT09MjUgJiBhJHllYXI8PTIwMDJdIDwtIDENCmEkcHJlc2lkZW50aWFsW2EkY291bnRyeT09MjUgJiBhJHllYXI+PTIwMTJdIDwtIDENCg0KIyBhbHRlcm5hdGl2ZSBkcGx5ciB2ZXJzaW9uDQoNCiMgdGFibGUgPC0gdGFibGUgJT4lDQojICAgbXV0YXRlKHByZXNpZGVudGlhbCA9IGNhc2Vfd2hlbigNCiMgICAgIGNvdW50cnkgJWluJSBjKDEsIDMsIDQsIDEwLCAxNCwgMTcsIDIxLCAyMiwgMjMpIH4gMSwNCiMgICAgIGNvdW50cnkgPT0gNiAmIHllYXIgPj0gMjAxMyB+IDEsDQojICAgICBjb3VudHJ5ID09IDI0ICYgeWVhciA+PSAxOTk5IH4gMSwNCiMgICAgIGNvdW50cnkgPT0gMjUgJiB5ZWFyIDw9IDIwMDIgfiAxLA0KIyAgICAgY291bnRyeSA9PSAyNSAmIHllYXIgPj0gMjAxMiB+IDEsDQojICAgICBUUlVFIH4gMCAgIyBkZWZhdWx0IHZhbHVlDQojICAgKSkNCg0KDQphIDwtIGEgfD4NCiAgbXV0YXRlKGxlZ2lzbGF0aXZlX3R5cGUgPSBjYXNlX3doZW4oDQogICAgY291bnRyeSAlaW4lIGMoMyw0LDExLDE5LDEyLDEzLDE1LDE3LDIzKSB+IDEsDQogICAgY291bnRyeSA9PSAxMCB+IDIsDQogICAgY291bnRyeSA9PSAyOCB+MiwNCiAgICBjb3VudHJ5PT0zICYgeWVhcj09MjAwOSB+IDIsDQogICAgY291bnRyeT09NCAmIHllYXI8PTE5OTUgfiAyLA0KICAgIGNvdW50cnk9PTE1ICYgeWVhcj49MTk5NCAmIHllYXIgPD0yMDAxIH4gMiwNCiAgICBjb3VudHJ5PT0yMyAmIHllYXI+PTIwMDggJiB5ZWFyPD0yMDEyIH4gMiwNCiAgICBUUlVFIH4gMA0KICApKQ0KDQphIDwtIGEgfD4NCiAgbXV0YXRlKG1ham9yaXRhcmlhbiA9IGNhc2Vfd2hlbigNCiAgICBsZWdpc2xhdGl2ZV90eXBlID09MSB+IDAsDQogICAgbGVnaXNsYXRpdmVfdHlwZT09MiB+IDENCiAgKSkNCiAgDQoNCmBgYA0KDQoqKiBhZGQgbWF0aCBzY29yZSBkYXRhDQoNCmBgYHtyfQ0KDQpsb2FkKCJEOi9SZXBfUi9SZXBfS29zdGVsa2EvbWF0aHNfZGlmZl90b19tZXJnZS5SRGF0YSIpDQptIDwtIHRhYmxlDQoNCg0KYSRjb3VudHJ5eWVhciA8LSBwYXN0ZShhJGNvdW50cnksYSR5ZWFyLCBzZXAgPSAiIikgIyBhbHRlcm5hdGl2ZWx5IHBhc3RlMA0KDQptbWF0aHMgPC0gbWVyZ2UoYSxtLCBieSA9YygiY291bnRyeSIsInllYXIiLCAiY291bnRyeXllYXIiKSkNCiMgDQojIAltZXJnZSBtOjEgY291bnRyeXllYXIgdXNpbmcgImRhdGEvbWF0aHNfZGlmZl90b19tZXJnZS5kdGEiDQojIAlkcm9wIGlmIF9tZXJnZT09Mg0KIyAJZHJvcCBfbWVyZ2UNCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQojIyBMaWJyYXJpZXMNCkxvYWRpbmcgYWxsIHRoZSBuZWNlc3NhcnkgbGlicmFyaWVzIQ0KDQpgYGB7cn0NCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkoc3RyaW5ncikNCg0KDQpsaWJyYXJ5KHVzZXRoaXMpDQp1c2VfZ2l0X2NvbmZpZyh1c2VyLm5hbWUgPSAibWFsaW5hLWEiLCB1c2VyLmVtYWlsID0gIm1hbGluYS5hbmlvbEBzY2llbmNlc3BvLmZyIikNCg0KYGBgDQoNCg0KdXNlICJkYXRhL0VFU19hZ2dyZWdhdGVkX21hY3JvdmFyaWFibGVzLmR0YSIsIGNsZWFyDQoNCmBgYHtyfQ0KbG9hZCgiQzovVXNlcnMvbWFsaW4vRG93bmxvYWRzL0VFU19hZ2dyZWdhdGVkX21hY3JvdmFyaWFibGVzLlJEYXRhIikNCmEgPC0gdGFibGUNCmBgYA0KDQphZGQgbWFjcm8tbGV2ZWwgdmFyaWFibGVzDQpgYGB7cn0NCg0KYSRwcmVzaWRlbnRpYWwgPC0gMA0KDQphJHByZXNpZGVudGlhbFthJGNvdW50cnkgPT0gMSB8YSRjb3VudHJ5ID09IDMgfGEkY291bnRyeSA9PSA0fGEkY291bnRyeSA9PSAxMHxhJGNvdW50cnkgPT0gMTR8YSRjb3VudHJ5ID09IDE3fGEkY291bnRyeSA9PSAyMXxhJGNvdW50cnkgPT0gMjJ8YSRjb3VudHJ5ID09IDIzXSA8LSAxDQoNCmEkcHJlc2lkZW50aWFsW2EkY291bnRyeT09NiAmIGEkeWVhcj49MjAxM10gPC0gMQ0KYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT0yNCAmIGEkeWVhcj49MTk5OV0gPC0gMQ0KYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT0yNSAmIGEkeWVhcjw9MjAwMl0gPC0gMQ0KYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT0yNSAmIGEkeWVhcj49MjAxMl0gPC0gMQ0KDQojIGFsdGVybmF0aXZlIGRwbHlyIHZlcnNpb24NCg0KIyB0YWJsZSA8LSB0YWJsZSAlPiUNCiMgICBtdXRhdGUocHJlc2lkZW50aWFsID0gY2FzZV93aGVuKA0KIyAgICAgY291bnRyeSAlaW4lIGMoMSwgMywgNCwgMTAsIDE0LCAxNywgMjEsIDIyLCAyMykgfiAxLA0KIyAgICAgY291bnRyeSA9PSA2ICYgeWVhciA+PSAyMDEzIH4gMSwNCiMgICAgIGNvdW50cnkgPT0gMjQgJiB5ZWFyID49IDE5OTkgfiAxLA0KIyAgICAgY291bnRyeSA9PSAyNSAmIHllYXIgPD0gMjAwMiB+IDEsDQojICAgICBjb3VudHJ5ID09IDI1ICYgeWVhciA+PSAyMDEyIH4gMSwNCiMgICAgIFRSVUUgfiAwICAjIGRlZmF1bHQgdmFsdWUNCiMgICApKQ0KDQoNCmEgPC0gYSB8Pg0KICBtdXRhdGUobGVnaXNsYXRpdmVfdHlwZSA9IGNhc2Vfd2hlbigNCiAgICBjb3VudHJ5ICVpbiUgYygzLDQsMTEsMTksMTIsMTMsMTUsMTcsMjMpIH4gMSwNCiAgICBjb3VudHJ5ID09IDEwIH4gMiwNCiAgICBjb3VudHJ5ID09IDI4IH4yLA0KICAgIGNvdW50cnk9PTMgJiB5ZWFyPT0yMDA5IH4gMiwNCiAgICBjb3VudHJ5PT00ICYgeWVhcjw9MTk5NSB+IDIsDQogICAgY291bnRyeT09MTUgJiB5ZWFyPj0xOTk0ICYgeWVhciA8PTIwMDEgfiAyLA0KICAgIGNvdW50cnk9PTIzICYgeWVhcj49MjAwOCAmIHllYXI8PTIwMTIgfiAyLA0KICAgIFRSVUUgfiAwDQogICkpDQoNCmEgPC0gYSB8Pg0KICBtdXRhdGUobWFqb3JpdGFyaWFuID0gY2FzZV93aGVuKA0KICAgIGxlZ2lzbGF0aXZlX3R5cGUgPT0xIH4gMCwNCiAgICBsZWdpc2xhdGl2ZV90eXBlPT0yIH4gMQ0KICApKQ0KICANCg0KYGBgDQoNCioqIGFkZCBtYXRoIHNjb3JlIGRhdGENCg0KYGBge3J9DQoNCmxvYWQoIkQ6L1JlcF9SL1JlcF9Lb3N0ZWxrYS9tYXRoc19kaWZmX3RvX21lcmdlLlJEYXRhIikNCm0gPC0gdGFibGUNCg0KDQphJGNvdW50cnl5ZWFyIDwtIHBhc3RlKGEkY291bnRyeSxhJHllYXIsIHNlcCA9ICIiKSAjIGFsdGVybmF0aXZlbHkgcGFzdGUwDQoNCm1tYXRocyA8LSBtZXJnZShhLG0sIGJ5ID1jKCJjb3VudHJ5IiwieWVhciIsICJjb3VudHJ5eWVhciIpKQ0KIyANCiMgCW1lcmdlIG06MSBjb3VudHJ5eWVhciB1c2luZyAiZGF0YS9tYXRoc19kaWZmX3RvX21lcmdlLmR0YSINCiMgCWRyb3AgaWYgX21lcmdlPT0yDQojIAlkcm9wIF9tZXJnZQ0KYGBgDQoNCg==</div>
 
 
 

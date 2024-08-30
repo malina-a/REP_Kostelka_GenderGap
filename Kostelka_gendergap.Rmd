@@ -4,6 +4,7 @@ output: html_notebook
 ---
 
 ## Libraries
+Loading all the necessary libraries!
 
 ```{r}
 library(dplyr)
