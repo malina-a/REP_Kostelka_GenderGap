@@ -1757,80 +1757,32 @@ display: none;
 <p>Loading all the necessary libraries!</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5pbnN0YWxsLnBhY2thZ2VzKFxcdXNldGhpc1xcKVxuXG5gYGBcbmBgYCJ9 -->
-<pre class="r"><code>```r
-
-install.packages(\usethis\)
-</code></pre>
-<pre><code>
-&lt;!-- rnb-source-end --&gt;
-
-&lt;!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g4oCYQzovVXNlcnMvbWFsaW4vQXBwRGF0YS9Mb2NhbC9SL3dpbi1saWJyYXJ5LzQuM+KAmVxuKGFzIOKAmGxpYuKAmSBpcyB1bnNwZWNpZmllZClcbnRyeWluZyBVUkwgJ2h0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9iaW4vd2luZG93cy9jb250cmliLzQuMy91c2V0aGlzXzMuMC4wLnppcCdcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24vemlwJyBsZW5ndGggOTE4Nzc3IGJ5dGVzICg4OTcgS0IpXG5kb3dubG9hZGVkIDg5NyBLQlxucGFja2FnZSDigJh1c2V0aGlz4oCZIHN1Y2Nlc3NmdWxseSB1bnBhY2tlZCBhbmQgTUQ1IHN1bXMgY2hlY2tlZFxuXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdEM6XFxVc2Vyc1xcbWFsaW5cXEFwcERhdGFcXExvY2FsXFxUZW1wXFxSdG1wQVp2emtvXFxkb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== --&gt;
-</code></pre>
-<p>Installing package into
-‘C:/Users/malin/AppData/Local/R/win-library/4.3’ (as ‘lib’ is
-unspecified) trying URL ‘<a href="https://cran.rstudio.com/bin/windows/contrib/4.3/usethis_3.0.0.zip" class="uri">https://cran.rstudio.com/bin/windows/contrib/4.3/usethis_3.0.0.zip</a>’
-Content type ‘application/zip’ length 918777 bytes (897 KB) downloaded
-897 KB package ‘usethis’ successfully unpacked and MD5 sums checked</p>
-<p>The downloaded binary packages are in C:_packages</p>
-<pre><code>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkodGlkeXZlcnNlKVxubGlicmFyeShzdHJpbmdyKVxuXG5cbmxpYnJhcnkodXNldGhpcylcbnVzZV9naXRfY29uZmlnKHVzZXIubmFtZSA9IFwibWFsaW5hLWFcIiwgdXNlci5lbWFpbCA9IFwibWFsaW5hLmFuaW9sQHNjaWVuY2VzcG8uZnJcIilcblxuYGBgIn0= -->
+<pre class="r"><code>library(dplyr)
+library(tidyverse)
+library(stringr)
 
 
-&lt;!-- rnb-output-end --&gt;
-
-&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubGlicmFyeSh1c2V0aGlzKVxuXG5gYGBcbmBgYCJ9 --&gt;
-
-```r
-```r
 library(usethis)
+use_git_config(user.name = &quot;malina-a&quot;, user.email = &quot;malina.aniol@sciencespo.fr&quot;)
 </code></pre>
-<pre><code>
-&lt;!-- rnb-source-end --&gt;
-
-&lt;!-- rnb-chunk-end --&gt;
-
-
-&lt;!-- rnb-text-begin --&gt;
-
-
-
-use &quot;data/EES_aggregated_macrovariables.dta&quot;, clear
-
-
-&lt;!-- rnb-text-end --&gt;
-
-
-&lt;!-- rnb-chunk-begin --&gt;
-
-
-&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubG9hZChcXEM6L1VzZXJzL21hbGluL0Rvd25sb2Fkcy9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5SRGF0YVxcKVxuYSA8LSB0YWJsZVxuYGBgXG5gYGAifQ== --&gt;
-
-```r
-```r
-load(\C:/Users/malin/Downloads/EES_aggregated_macrovariables.RData\)
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>use “data/EES_aggregated_macrovariables.dta”, clear</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9hZChcIkM6L1VzZXJzL21hbGluL0Rvd25sb2Fkcy9FRVNfYWdncmVnYXRlZF9tYWNyb3ZhcmlhYmxlcy5SRGF0YVwiKVxuYSA8LSB0YWJsZVxuYGBgIn0= -->
+<pre class="r"><code>load(&quot;C:/Users/malin/Downloads/EES_aggregated_macrovariables.RData&quot;)
 a &lt;- table</code></pre>
-<pre><code>
-&lt;!-- rnb-source-end --&gt;
-
-&lt;!-- rnb-chunk-end --&gt;
-
-
-&lt;!-- rnb-text-begin --&gt;
-
-
-add macro-level variables
-
-&lt;!-- rnb-text-end --&gt;
-
-
-&lt;!-- rnb-chunk-begin --&gt;
-
-
-&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5hJHByZXNpZGVudGlhbCA8LSAwXG5cbmEkcHJlc2lkZW50aWFsW2EkY291bnRyeSA9PSAxIHxhJGNvdW50cnkgPT0gMyB8YSRjb3VudHJ5ID09IDR8YSRjb3VudHJ5ID09IDEwfGEkY291bnRyeSA9PSAxNHxhJGNvdW50cnkgPT0gMTd8YSRjb3VudHJ5ID09IDIxfGEkY291bnRyeSA9PSAyMnxhJGNvdW50cnkgPT0gMjNdIDwtIDFcblxuYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT02ICYgYSR5ZWFyPj0yMDEzXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI0ICYgYSR5ZWFyPj0xOTk5XSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPD0yMDAyXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPj0yMDEyXSA8LSAxXG5cbiMgYWx0ZXJuYXRpdmUgZHBseXIgdmVyc2lvblxuXG4jIHRhYmxlIDwtIHRhYmxlICU+JVxuIyAgIG11dGF0ZShwcmVzaWRlbnRpYWwgPSBjYXNlX3doZW4oXG4jICAgICBjb3VudHJ5ICVpbiUgYygxLCAzLCA0LCAxMCwgMTQsIDE3LCAyMSwgMjIsIDIzKSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDYgJiB5ZWFyID49IDIwMTMgfiAxLFxuIyAgICAgY291bnRyeSA9PSAyNCAmIHllYXIgPj0gMTk5OSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDI1ICYgeWVhciA8PSAyMDAyIH4gMSxcbiMgICAgIGNvdW50cnkgPT0gMjUgJiB5ZWFyID49IDIwMTIgfiAxLFxuIyAgICAgVFJVRSB+IDAgICMgZGVmYXVsdCB2YWx1ZVxuIyAgICkpXG5cblxuYSA8LSBhIHw+XG4gIG11dGF0ZShsZWdpc2xhdGl2ZV90eXBlID0gY2FzZV93aGVuKFxuICAgIGNvdW50cnkgJWluJSBjKDMsNCwxMSwxOSwxMiwxMywxNSwxNywyMykgfiAxLFxuICAgIGNvdW50cnkgPT0gMTAgfiAyLFxuICAgIGNvdW50cnkgPT0gMjggfjIsXG4gICAgY291bnRyeT09MyAmIHllYXI9PTIwMDkgfiAyLFxuICAgIGNvdW50cnk9PTQgJiB5ZWFyPD0xOTk1IH4gMixcbiAgICBjb3VudHJ5PT0xNSAmIHllYXI+PTE5OTQgJiB5ZWFyIDw9MjAwMSB+IDIsXG4gICAgY291bnRyeT09MjMgJiB5ZWFyPj0yMDA4ICYgeWVhcjw9MjAxMiB+IDIsXG4gICAgVFJVRSB+IDBcbiAgKSlcblxuYSA8LSBhIHw+XG4gIG11dGF0ZShtYWpvcml0YXJpYW4gPSBjYXNlX3doZW4oXG4gICAgbGVnaXNsYXRpdmVfdHlwZSA9PTEgfiAwLFxuICAgIGxlZ2lzbGF0aXZlX3R5cGU9PTIgfiAxXG4gICkpXG4gIFxuXG5gYGBcbmBgYCJ9 --&gt;
-
-```r
-```r
-
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>add macro-level variables</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5hJHByZXNpZGVudGlhbCA8LSAwXG5cbmEkcHJlc2lkZW50aWFsW2EkY291bnRyeSA9PSAxIHxhJGNvdW50cnkgPT0gMyB8YSRjb3VudHJ5ID09IDR8YSRjb3VudHJ5ID09IDEwfGEkY291bnRyeSA9PSAxNHxhJGNvdW50cnkgPT0gMTd8YSRjb3VudHJ5ID09IDIxfGEkY291bnRyeSA9PSAyMnxhJGNvdW50cnkgPT0gMjNdIDwtIDFcblxuYSRwcmVzaWRlbnRpYWxbYSRjb3VudHJ5PT02ICYgYSR5ZWFyPj0yMDEzXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI0ICYgYSR5ZWFyPj0xOTk5XSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPD0yMDAyXSA8LSAxXG5hJHByZXNpZGVudGlhbFthJGNvdW50cnk9PTI1ICYgYSR5ZWFyPj0yMDEyXSA8LSAxXG5cbiMgYWx0ZXJuYXRpdmUgZHBseXIgdmVyc2lvblxuXG4jIHRhYmxlIDwtIHRhYmxlICU+JVxuIyAgIG11dGF0ZShwcmVzaWRlbnRpYWwgPSBjYXNlX3doZW4oXG4jICAgICBjb3VudHJ5ICVpbiUgYygxLCAzLCA0LCAxMCwgMTQsIDE3LCAyMSwgMjIsIDIzKSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDYgJiB5ZWFyID49IDIwMTMgfiAxLFxuIyAgICAgY291bnRyeSA9PSAyNCAmIHllYXIgPj0gMTk5OSB+IDEsXG4jICAgICBjb3VudHJ5ID09IDI1ICYgeWVhciA8PSAyMDAyIH4gMSxcbiMgICAgIGNvdW50cnkgPT0gMjUgJiB5ZWFyID49IDIwMTIgfiAxLFxuIyAgICAgVFJVRSB+IDAgICMgZGVmYXVsdCB2YWx1ZVxuIyAgICkpXG5cblxuYSA8LSBhIHw+XG4gIG11dGF0ZShsZWdpc2xhdGl2ZV90eXBlID0gY2FzZV93aGVuKFxuICAgIGNvdW50cnkgJWluJSBjKDMsNCwxMSwxOSwxMiwxMywxNSwxNywyMykgfiAxLFxuICAgIGNvdW50cnkgPT0gMTAgfiAyLFxuICAgIGNvdW50cnkgPT0gMjggfjIsXG4gICAgY291bnRyeT09MyAmIHllYXI9PTIwMDkgfiAyLFxuICAgIGNvdW50cnk9PTQgJiB5ZWFyPD0xOTk1IH4gMixcbiAgICBjb3VudHJ5PT0xNSAmIHllYXI+PTE5OTQgJiB5ZWFyIDw9MjAwMSB+IDIsXG4gICAgY291bnRyeT09MjMgJiB5ZWFyPj0yMDA4ICYgeWVhcjw9MjAxMiB+IDIsXG4gICAgVFJVRSB+IDBcbiAgKSlcblxuYSA8LSBhIHw+XG4gIG11dGF0ZShtYWpvcml0YXJpYW4gPSBjYXNlX3doZW4oXG4gICAgbGVnaXNsYXRpdmVfdHlwZSA9PTEgfiAwLFxuICAgIGxlZ2lzbGF0aXZlX3R5cGU9PTIgfiAxXG4gICkpXG4gIFxuXG5gYGAifQ== -->
+<pre class="r"><code>
 a$presidential &lt;- 0
 
 a$presidential[a$country == 1 |a$country == 3 |a$country == 4|a$country == 10|a$country == 14|a$country == 17|a$country == 21|a$country == 22|a$country == 23] &lt;- 1
@@ -1872,37 +1824,26 @@ a &lt;- a |&gt;
   ))
   
 </code></pre>
-<pre><code>
-&lt;!-- rnb-source-end --&gt;
-
-&lt;!-- rnb-chunk-end --&gt;
-
-
-&lt;!-- rnb-text-begin --&gt;
-
-
-** add math score data
-
-
-&lt;!-- rnb-text-end --&gt;
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>** add math score data</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5sb2FkKFwiRDovUmVwX1IvUmVwX0tvc3RlbGthL21hdGhzX2RpZmZfdG9fbWVyZ2UuUkRhdGFcIilcbm0gPC0gdGFibGVcblxuXG5hJGNvdW50cnl5ZWFyIDwtIHBhc3RlKGEkY291bnRyeSxhJHllYXIsIHNlcCA9IFwiXCIpICMgYWx0ZXJuYXRpdmVseSBwYXN0ZTBcblxubW1hdGhzIDwtIG1lcmdlKGEsbSwgYnkgPWMoXCJjb3VudHJ5XCIsXCJ5ZWFyXCIsIFwiY291bnRyeXllYXJcIikpXG4jIFxuIyBcdG1lcmdlIG06MSBjb3VudHJ5eWVhciB1c2luZyBcImRhdGEvbWF0aHNfZGlmZl90b19tZXJnZS5kdGFcIlxuIyBcdGRyb3AgaWYgX21lcmdlPT0yXG4jIFx0ZHJvcCBfbWVyZ2VcbmBgYCJ9 -->
+<pre class="r"><code>
+load(&quot;D:/Rep_R/Rep_Kostelka/maths_diff_to_merge.RData&quot;)
+m &lt;- table
 
 
-&lt;!-- rnb-chunk-begin --&gt;
+a$countryyear &lt;- paste(a$country,a$year, sep = &quot;&quot;) # alternatively paste0
 
-
-&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuYSRjb3VudHJ5eWVhciA8LSBwYXN0ZShjb3VudHJ5LHllYXIpXG5cbmBgYFxuYGBgIn0= --&gt;
-
-```r
-```r
-a$countryyear &lt;- paste(country,year)
-</code></pre>
-<pre><code>
-&lt;!-- rnb-source-end --&gt;
-
-&lt;!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IG9iamVjdCAnY291bnRyeScgbm90IGZvdW5kXG4ifQ== --&gt;
-</code></pre>
-<p>Error: object ‘country’ not found ```</p>
-<!-- rnb-output-end -->
+mmaths &lt;- merge(a,m, by =c(&quot;country&quot;,&quot;year&quot;, &quot;countryyear&quot;))
+# 
+#   merge m:1 countryyear using &quot;data/maths_diff_to_merge.dta&quot;
+#   drop if _merge==2
+#   drop _merge</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
