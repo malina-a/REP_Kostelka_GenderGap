@@ -84,9 +84,49 @@ m <- table
 a$countryyear <- paste(a$country,a$year, sep = "") # alternatively paste0
 
 mmaths <- merge(a,m, by =c("country","year", "countryyear"))
-# 
-# 	merge m:1 countryyear using "data/maths_diff_to_merge.dta"
-# 	drop if _merge==2
-# 	drop _merge
+
+```
+
+
+add EIGE data
+** add gender equality index data 
+	merge m:1 country year using "data/EIGE_to_merge1.dta" 
+	drop _merge	EIGE_country long_term_index
+
+	merge m:1 country using "data/EIGE_to_merge2.dta"
+	drop _merge	
+	
+	lab var value "EIGE" 
+	lab var long_term_index "EIGE (2005-2015 average)" 
+```{r}
+
+load("D:/Rep_R/REP_Kostelka_GenderGap/EIGE_to_merge1.RData")
+eige1 <- table
+
+load("D:/Rep_R/REP_Kostelka_GenderGap/EIGE_to_merge2.RData")
+eige2 <- table
+
+me1 <- merge(mmaths, eige1, by = c("country", "year"), all.x = TRUE)
+
+mee <- merge(me1, eige2, by = "country", all.x =TRUE)
+
+mee <- mee |>
+  select(-EIGE_country.x, -long_term_index.x, -EIGE_country.y, -long_term_index.y)
+
+
+```
+
+
+** add EVS survey data 
+	merge m:1 country using "data/EVS_to_merge.dta"
+	drop _merge	
+	
+```{r}
+load("D:/Rep_R/REP_Kostelka_GenderGap/EVS_to_merge.RData")
+
+evs <- table
+
+meeevs <- merge (mee, evs, by = "country", all.x = TRUE)
+
 ```
 
