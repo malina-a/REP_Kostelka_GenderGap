@@ -8,4 +8,4 @@ Data source: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.791
 Article: https://sciencespo.hal.science/hal-02926440/file/2020-kostelka-the-cultural-sources-of-the-gender-gap-in-voter-turnout.pdf
 
 
-[https://github.com/iaonnaa](url)
+[Yana]([https://americangerman.institute/by-author/malina-aniol/](https://github.com/iaonnaa))
