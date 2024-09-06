@@ -126,7 +126,64 @@ load("D:/Rep_R/REP_Kostelka_GenderGap/EVS_to_merge.RData")
 
 evs <- table
 
-meeevs <- merge (mee, evs, by = "country", all.x = TRUE)
+meeevs1 <- merge (mee, evs, by = "country", all.x = TRUE, all.y = FALSE)
 
 ```
 
+
+* Generating filter with missing values on some of the individual IVs
+	
+	gen filter=1
+	replace filter=0 if mi(female, age, postsecondary, social_class, employment_status, interest, close_to_party, tu_member, religiosity, membership_good)
+	
+	sum female age postsecondary social_class employment_status interest close_to_party tu_member religiosity membership_good
+	sum female age postsecondary social_class employment_status interest close_to_party tu_member religiosity membership_good if filter==1
+	
+	gen filter2=1
+	replace filter2=0 if mi(female, age, postsecondary, social_class, employment_status, interest, close_to_party)
+	
+```{r}
+meeevs$filter1 <- 1
+
+meeevs$filter1[is.na(meeevs$female)| is.na(meeevs$age)| is.na(meeevs$postsecondary)| is.na(meeevs$social_class)| is.na(meeevs$employment_status)| is.na(meeevs$interest)| is.na(meeevs$close_to_party)| is.na(meeevs$tu_member)| is.na(meeevs$religiosity)| is.na(meeevs$membership_good)] <- 0
+
+meeevs$filter2 <- 1
+
+meeevs$filter2[is.na(meeevs$female)| is.na(meeevs$age)| is.na(meeevs$postsecondary)| is.na(meeevs$social_class)| is.na(meeevs$employment_status)| is.na(meeevs$interest)| is.na(meeevs$close_to_party)] <- 0
+
+
+```
+
+
+
+	
+********************
+**	MAIN RESULTS  **
+********************
+
+
+* Figure 1. evolution of the gender gap in turnout
+
+	cap set scheme bw
+
+	recode country (2 7 10 14 11 15 18 20 28=1 "Member States in 1979") (else=0), gen(ms1979)
+
+	eststo clear
+	foreach k of numlist 1979 1984 1989 1994 1999 2004 2009 2014 {
+	reg vote_eur i.female i.country if year==`k', l(90)
+	eststo M_`k'_graph_all: margins, dydx(female) post
+	}
+
+	foreach k of numlist 1979 1984 1989 1994 1999 2004 2009 2014 {
+	reg vote_eur i.female i.country if year==`k' & ms1979==1, l(90)
+	eststo M_`k'_graph_MS1979: margins, dydx(female) post
+	}
+
+	coefplot (M_1979_graph_all, label("All Member States") msymbol(Oh)) (M_1979_graph_MS1979, label("1979 Member States") msymbol(O)), bylabel(1979) || ///
+	M_1984_graph_all M_1984_graph_MS1979, bylabel(1984) || M_1989_graph_all M_1989_graph_MS1979, bylabel(1989) || /// 
+	M_1994_graph_all M_1994_graph_MS1979, bylabel(1994) || M_1999_graph_all M_1999_graph_MS1979, bylabel(1999) || /// 
+	M_2004_graph_all M_2004_graph_MS1979, bylabel(2004) || M_2009_graph_all M_2009_graph_MS1979, bylabel(2009) || /// 
+	M_2014_graph_all M_2014_graph_MS1979, bylabel(2014) bycoef vertical ytitle("Gender gap in the probability to vote", size(medsmall) height(-3)) ///  
+	legend(size(small) bm(medsmall)) ylabel(, labs(small))  xlabel(, labs(small)) yline(0, lp(dash))
+
+	graph export "Figure1.eps", replace
